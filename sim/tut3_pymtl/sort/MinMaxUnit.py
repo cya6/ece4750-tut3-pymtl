@@ -24,8 +24,8 @@ class MinMaxUnit( Model ):
     # ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     
     if s.in0.v <= s.in1.v:
-      s.out_min.value = s.in0
-      s.out_max.value = s.in1
+      s.out_min.value = s.in0.v
+      s.out_max.value = s.in1.v
     else
-      s.out_min.value = s.in1
-      s.out_min.value = s.in0
+      s.out_min.value = s.in1.v
+      s.out_min.value = s.in0.v
