@@ -23,9 +23,9 @@ class MinMaxUnit( Model ):
     # unit test from scratch named MinMaxUnit_test.py.
     # ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     
-    if s.in0 <= s.in1:
-      s.out_min.value(s.in0.v)
-      s.out_max.value(s.in1.v)
+    if s.in0.v <= s.in1.v:
+      s.out_min.value = s.in0
+      s.out_max.value = s.in1
     else
-      s.out_min.value(s.in1.v)
-      s.out_min.value(s.in0.v)
+      s.out_min.value = s.in1
+      s.out_min.value = s.in0
